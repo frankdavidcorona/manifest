@@ -23,7 +23,7 @@
 
   <!-- Some qcom-caf stuff taken from Pixel Experience-->
   <remove-project name="hardware_qcom-caf_sm8150_media" />
-  <project name="PixelExperience/hardware_qcom_media-caf_sm8150" path="hardware/qcom-caf/sm8150/media" remote="pixel-caf" />
+  <project name="hardware_qcom_media-caf_sm8150" path="hardware/qcom-caf/sm8150/media" remote="pixel-caf" />
 
    <!-- Device trees and kernel -->
   <project name="frankdavidcorona/android_device_xiaomi_laurel_sprout" path="device/xiaomi/laurel_sprout" remote="github" revision="evox" />
