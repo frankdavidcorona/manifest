@@ -2,11 +2,11 @@
 <manifest>
 
   <!-- replace system/sepolicy -->
-  <remove-project name="platform/system/sepolicy" />
+  <remove-project name="system_sepolicy" />
   <project name="frankdavidcorona/system_sepolicy" path="system/sepolicy" revision="ten" remote="github" />
 
   <!-- replace build/make -->
-  <remove-project name="build/make" />
+  <remove-project name="build" />
   <project name="frankdavidcorona/build" path="build/make" revision="ten" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
