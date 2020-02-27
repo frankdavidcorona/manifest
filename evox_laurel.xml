@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="pixel-caf"
+          fetch="https://github.com/PixelExperience"
+          revision="pie-caf" />
+
   <!-- replace system/sepolicy -->
   <remove-project name="system_sepolicy" />
   <project name="frankdavidcorona/system_sepolicy" path="system/sepolicy" revision="ten" remote="github" />
@@ -19,7 +23,7 @@
 
   <!-- Some qcom-caf stuff taken from Pixel Experience-->
   <remove-project name="hardware_qcom-caf_sm8150_media" />
-  <project name="PixelExperience/hardware_qcom_media-caf_sm8150" path="hardware/qcom-caf/sm8150/media" revision="pie-caf" remote="github" />
+  <project name="PixelExperience/hardware_qcom_media-caf_sm8150" path="hardware/qcom-caf/sm8150/media" remote="pixel-caf" />
 
    <!-- Device trees and kernel -->
   <project name="frankdavidcorona/android_device_xiaomi_laurel_sprout" path="device/xiaomi/laurel_sprout" remote="github" revision="evox" />
