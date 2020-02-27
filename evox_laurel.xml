@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- replace system/sepolicy -->
+  <remove-project name="platform/system/sepolicy" />
+  <project name="frankdavidcorona/system_sepolicy" path="system/sepolicy" revision="ten" remote="github" />
+
+  <!-- replace build/make -->
+  <remove-project name="build/make" />
+  <project name="frankdavidcorona/build" path="build/make" revision="ten" remote="github" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <!-- Some qcom stuff -->
+  <remove-project name="platform/hardware/qcom/sm8150/media" />
+  <project name="PixelExperience/hardware_qcom_media-caf_sm8150" path="hardware/qcom/sm8150/media" revision="pie-caf" remote="github" />
+
+   <!-- Device trees and kernel -->
+  <project name="frankdavidcorona/android_device_xiaomi_laurel_sprout" path="device/xiaomi/laurel_sprout" remote="github" revision="evox" />
+  <project name="frankdavidcorona/android_vendor_xiaomi_laurel_sprout" path="vendor/xiaomi/laurel_sprout" remote="github" revision="laurel_sprout" />
+  <project name="frankdavidcorona/bit_kernel_xiaomi_laurel_sprout" path="kernel/xiaomi/laurel_sprout" remote="github" revision="ten" /> 
+</manifest>
