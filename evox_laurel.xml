@@ -6,7 +6,7 @@
           revision="pie-caf" />
 
   <remote name="evo-chaplindev"
-          fetch="https://github.com/frankdavidcorona/evox_frameworks_base"
+          fetch="https://github.com/frankdavidcorona"
           revision="ten" />
 
   <!-- replace system/sepolicy -->
