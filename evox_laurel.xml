@@ -5,9 +5,17 @@
           fetch="https://github.com/PixelExperience"
           revision="pie-caf" />
 
+  <remote name="evo-chaplindev"
+          fetch="https://github.com/frankdavidcorona/evox_frameworks_base"
+          revision="ten" />
+
   <!-- replace system/sepolicy -->
   <remove-project name="system_sepolicy" />
   <project name="frankdavidcorona/system_sepolicy" path="system/sepolicy" revision="ten" remote="github" />
+
+  <!-- replace frameworks/base -->
+  <remove-project name="frameworks_base" />
+  <project name="evox_frameworks_base" path="frameworks/base" remote="evo-chaplindev" />
 
   <!-- replace build/make -->
   <remove-project name="build" />
