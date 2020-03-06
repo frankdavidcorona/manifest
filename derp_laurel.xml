@@ -10,7 +10,7 @@
   <project name="frankdavidcorona/derp_system_sepolicy" path="system/sepolicy" revision="ten" remote="github" />
 
   <!-- replace build/make -->
-  <remove-project name="platform/build" />
+  <remove-project name="platform_build" />
   <project name="frankdavidcorona/derp_build" path="build/make" revision="ten" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -21,13 +21,8 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <!-- Some qcom-caf stuff taken from Pixel Experience-->
-  <remove-project name="hardware_qcom-caf_sm8150_media" />
-  <project name="hardware_qcom_media-caf_sm8150" path="hardware/qcom-caf/sm8150/media" remote="pixel-caf" />
-
    <!-- Device trees and kernel -->
-  <project name="frankdavidcorona/android_device_xiaomi_laurel_sprout" path="device/xiaomi/laurel_sprout" remote="github" revision="evox-rc" />
+  <project name="frankdavidcorona/android_device_xiaomi_laurel_sprout" path="device/xiaomi/laurel_sprout" remote="github" revision="derp-rc" />
   <project name="frankdavidcorona/android_vendor_xiaomi_laurel_sprout" path="vendor/xiaomi/laurel_sprout" remote="github" revision="laurel_sprout" />
-  <project name="frankdavidcorona/bit_kernel_xiaomi_laurel_sprout" path="kernel/xiaomi/laurel_sprout" remote="github" revision="ten" /> 
+  <project name="frankdavidcorona/bit_kernel_xiaomi_laurel_sprout" path="kernel/xiaomi/laurel_sprout" remote="github" revision="ten" />
 </manifest>
-Í
