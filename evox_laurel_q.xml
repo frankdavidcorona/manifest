@@ -26,9 +26,9 @@
   <project name="hardware_qcom_media-caf_sm8150" path="hardware/qcom-caf/sm8150/media" remote="pixel-caf" />
 
   <!-- Device trees and kernel -->
-  <project name="frankdavidcorona/android_device_xiaomi_laurel_sprout_q" path="device/xiaomi/laurel_sprout" remote="github" revision="ten" />
-  <project name="HarukeyUA/vendor_xiaomi_laurel_sprout" path="vendor/xiaomi/laurel_sprout" remote="github" revision="10.0" />
-  <project name="HarukeyUA/android_kernel_xiaomi_laurel_sprout" path="kernel/xiaomi/laurel_sprout" remote="github" revision="ten" />
+  <project name="frankdavidcorona/android_device_xiaomi_laurel_sprout_q" path="device/xiaomi/laurel_sprout" remote="github" revision="master" />
+  <project name="frankdavidcorona/android_vendor_xiaomi_laurel_sprout_q" path="vendor/xiaomi/laurel_sprout" remote="github" revision="master" />
+  <project name="frankdavidcorona/android_kernel_xiaomi_laurel_sprout_q" path="kernel/xiaomi/laurel_sprout" remote="github" revision="master" />
 
   <!-- MIUI Camera -->
   <project name="frankdavidcorona/vendor_MiuiCamera" path="vendor/MiuiCamera" remote="github" revision="ten-anx"/>
