@@ -7,11 +7,11 @@
 
   <!-- replace system/sepolicy -->
   <remove-project name="system_sepolicy" />
-  <project name="frankdavidcorona/system_sepolicy" path="system/sepolicy" revision="ten" remote="github" />
+  <project name="frankdavidcorona/ancient_system_sepolicy" path="system/sepolicy" revision="ten" remote="github" />
 
   <!-- replace build/make -->
-  <remove-project name="build" />
-  <project name="frankdavidcorona/build" path="build/make" revision="ten" remote="github" >
+  <remove-project name="android_build" />
+  <project name="frankdavidcorona/ancient_build" path="build/make" revision="ten" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
