@@ -4,7 +4,7 @@
   <!-- Device trees and kernel -->
   <project name="frankdavidcorona/android_vendor_xiaomi_davinci" path="vendor/xiaomi/davinci" remote="github" revision="master" />
   <project name="frankdavidcorona/android_device_xiaomi_davinci" path="device/xiaomi/davinci" remote="github" revision="master" />
-  <project name="frankdavidcorona/bit_kernel_xiaomi_laurel_sprout" path="kernel/xiaomi/laurel_sprout" remote="github" revision="master" />
+  <project name="frankdavidcorona/kernel_xiaomi_davinci" path="kernel/xiaomi/davinci" remote="github" revision="VantomKernel-Q" />
 
   <!-- MIUI Camera -->
   <project name="frankdavidcorona/vendor_MiuiCamera" path="vendor/MiuiCamera" remote="github" revision="ten-anx"/>
