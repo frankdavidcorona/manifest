@@ -7,6 +7,6 @@
   <project name="frankdavidcorona/kernel_xiaomi_davinci" path="kernel/xiaomi/davinci" remote="github" revision="VantomKernel-Q" />
 
   <!-- MIUI Camera -->
-  <project name="frankdavidcorona/vendor_MiuiCamera" path="vendor/MiuiCamera" remote="github" revision="ten-anx"/>
+  <project name="frankdavidcorona/vendor_MiuiCamera" path="vendor/MiuiCamera" remote="github" revision="master"/>
 
 </manifest>
